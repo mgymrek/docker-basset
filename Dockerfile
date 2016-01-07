@@ -12,7 +12,7 @@ RUN curl -s https://raw.githubusercontent.com/torch/ezinstall/master/install-dep
 RUN git clone https://github.com/torch/distro.git /home/workspace/torch --recursive
 WORKDIR /home/workspace/torch
 RUN ./install.sh
-RUN source ~/.bashrc
+RUN bash -c "source ~/.bashrc"
 
 # Install python dependencies
 RUN pip install numpy matplotlib seaborn pandas h5py sklearn pysam
