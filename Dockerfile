@@ -31,4 +31,4 @@ ENV BASSETDIR /home/workspace/Basset
 ENV PATH $BASSETDIR/src:$PATH
 ENV LUA_PATH "$BASSETDIR/src/?.lua;$LUA_PATH"
 ENV PYTHONPATH $BASSETDIR/src:$PYTHONPATH
-RUN ./install_dependencies.py
+#RUN ./install_dependencies.py
