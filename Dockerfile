@@ -27,3 +27,4 @@ RUN ./install_dependencies.py
 
 # Set up LUA_PATH
 RUN echo 'export LUA_PATH="$BASSETDIR/src/?.lua;${LUA_PATH}"' >> ~/.bashrc
+RUN bash -c "source ~/.bashrc"
